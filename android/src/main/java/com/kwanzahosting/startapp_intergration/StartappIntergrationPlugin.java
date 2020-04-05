@@ -52,16 +52,15 @@ public class StartappIntergrationPlugin implements FlutterPlugin, ActivityAware,
   public static void registerWith(Registrar registrar) {
     final MethodChannel channel = new MethodChannel(registrar.messenger(), "startapp_intergration");
     channel.setMethodCallHandler(new StartappIntergrationPlugin());
+
+    registrar.platformViewRegistry()
+            .registerViewFactory("com.kwanzahosting.startapp_intergration", new BannerFactory(registrar.messenger()));
+
   }
 
   @Override
   public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {
     switch (call.method) {
-      case "getPlatformVersion":
-          StartAppAd.showAd(mainActivity);
-        Log.d("onLoadingAPp", "Complete");
-
-        result.success("Hahaha Android " + android.os.Build.VERSION.RELEASE);
       case "showAd":
         StartAppAd.showAd(mainActivity);
         result.success(null);
@@ -110,16 +109,17 @@ public class StartappIntergrationPlugin implements FlutterPlugin, ActivityAware,
 
   @Override
   public void onDetachedFromActivityForConfigChanges() {
-
   }
 
   @Override
   public void onReattachedToActivityForConfigChanges(ActivityPluginBinding activityPluginBinding) {
-
   }
 
   @Override
   public void onDetachedFromActivity() {
+  }
 
+  public static Activity activity() {
+    return mainActivity;
   }
 }

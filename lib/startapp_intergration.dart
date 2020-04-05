@@ -12,21 +12,21 @@ const String PLUGIN_KEY = "vn.momo.plugin.startapp.StartAppBannerPlugin";
 class StartappIntergration {
 
   static const MethodChannel _channel = const MethodChannel('startapp_intergration');
-  static const platform = const MethodChannel(PLUGIN_KEY);
+//  static const platform = const MethodChannel(PLUGIN_KEY);
   static VoidCallback onVideoCompleted;
   static VoidCallback onReceiveAd;
   static StringToVoidFunc onFailedToReceiveAd;
 
   static showInterstitialAd() async {
-    await platform.invokeMethod('showAd');
+    await _channel.invokeMethod('showAd');
   }
 
   static showRewardedAd({VoidCallback onVideoCompleted,
     VoidCallback onReceiveAd,
     StringToVoidFunc onFailedToReceiveAd}) async {
     StartappIntergration.onVideoCompleted = onVideoCompleted;
-    platform.setMethodCallHandler(_handleMethod);
-    await platform.invokeMethod('showRewardedAd');
+    _channel.setMethodCallHandler(_handleMethod);
+    await _channel.invokeMethod('showRewardedAd');
   }
 
   static Future<String> get platformVersion async {
