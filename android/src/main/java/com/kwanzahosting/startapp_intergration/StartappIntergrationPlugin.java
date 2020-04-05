@@ -38,6 +38,12 @@ public class StartappIntergrationPlugin implements FlutterPlugin, ActivityAware,
   public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
     channel = new MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(), "startapp_intergration");
     channel.setMethodCallHandler(this);
+
+    flutterPluginBinding.getPlatformViewRegistry()
+            .registerViewFactory(
+                    "com.kwanzahosting.startapp_intergration.StartappIntergrationPlugin",
+                    new BannerFactory(flutterPluginBinding.getBinaryMessenger())
+            );
   }
 
   // This static function is optional and equivalent to onAttachedToEngine. It supports the old
@@ -49,14 +55,14 @@ public class StartappIntergrationPlugin implements FlutterPlugin, ActivityAware,
   // them functionally equivalent. Only one of onAttachedToEngine or registerWith will be called
   // depending on the user's project. onAttachedToEngine or registerWith must both be defined
   // in the same class.
-  public static void registerWith(Registrar registrar) {
-    final MethodChannel channel = new MethodChannel(registrar.messenger(), "startapp_intergration");
-    channel.setMethodCallHandler(new StartappIntergrationPlugin());
-
-    registrar.platformViewRegistry()
-            .registerViewFactory("com.kwanzahosting.startapp_intergration.StartappIntergrationPlugin", new BannerFactory(registrar.messenger()));
-
-  }
+//  public static void registerWith(Registrar registrar) {
+//    final MethodChannel channel = new MethodChannel(registrar.messenger(), "startapp_intergration");
+//    channel.setMethodCallHandler(new StartappIntergrationPlugin());
+//
+//    com.kwanzahosting.startapp_intergration.StartappIntergrationPlugin
+//    registrar.platformViewRegistry()
+//            .registerViewFactory("", new BannerFactory(registrar.messenger()));
+//  }
 
   @Override
   public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {

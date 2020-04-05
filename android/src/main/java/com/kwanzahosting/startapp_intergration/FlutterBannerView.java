@@ -19,9 +19,9 @@ import io.flutter.plugin.platform.PlatformView;
 public class FlutterBannerView implements PlatformView, MethodChannel.MethodCallHandler {
     private final FrameLayout bannerContainer;
 
-    FlutterBannerView(Context context, BinaryMessenger messenger, int id) {
+    FlutterBannerView(Context context, BinaryMessenger messenger) {
         bannerContainer = new FrameLayout(context);
-        new MethodChannel(messenger, "startapp_intergration")
+        new MethodChannel(messenger, "startapp_banner")
                 .setMethodCallHandler(this);
     }
 

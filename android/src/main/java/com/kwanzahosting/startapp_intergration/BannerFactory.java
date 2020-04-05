@@ -20,6 +20,6 @@ public class BannerFactory extends PlatformViewFactory {
 
     @Override
     public PlatformView create(Context context, int id, Object o) {
-        return new FlutterBannerView(context, messenger, id);
+        return new FlutterBannerView(context, messenger);
     }
 }

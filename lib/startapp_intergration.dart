@@ -12,7 +12,7 @@ const String PLUGIN_KEY = "com.kwanzahosting.startapp_intergration.StartappInter
 class StartappIntergration {
 
   static const MethodChannel _channel = const MethodChannel('startapp_intergration');
-//  static const platform = const MethodChannel(PLUGIN_KEY);
+//  static const MethodChannel _banner_channel = const MethodChannel('startapp_banner');
   static VoidCallback onVideoCompleted;
   static VoidCallback onReceiveAd;
   static StringToVoidFunc onFailedToReceiveAd;
@@ -97,12 +97,12 @@ class _BannerState extends State<AdBanner> {
 
 class BannerController {
   BannerController._(int id)
-      : _channel = new MethodChannel('startapp_intergration');
+      : _banner_channel = new MethodChannel('startapp_banner');
 
-  final MethodChannel _channel;
+  final MethodChannel _banner_channel;
 
   Future<void> loadAd() async {
-    return _channel.invokeMethod('loadAd');
+    return _banner_channel.invokeMethod('loadAd');
   }
 }
 
