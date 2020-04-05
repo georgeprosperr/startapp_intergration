@@ -58,7 +58,7 @@ public class StartappIntergrationPlugin implements FlutterPlugin, ActivityAware,
   public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {
     switch (call.method) {
       case "getPlatformVersion":
-          StartAppAd.showAd();
+          StartAppAd.showAd(mainActivity);
         Log.d("onLoadingAPp", "Complete");
 
         result.success("Hahaha Android " + android.os.Build.VERSION.RELEASE);
