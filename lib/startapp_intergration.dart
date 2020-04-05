@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 
 typedef void BannerCreatedCallback(BannerController controller);
 typedef StringToVoidFunc = void Function(String);
-const String PLUGIN_KEY = "com.kwanzahosting.StartappIntergrationPlugin";
+const String PLUGIN_KEY = "com.kwanzahosting.startapp_intergration.StartappIntergrationPlugin";
 
 class StartappIntergration {
 
