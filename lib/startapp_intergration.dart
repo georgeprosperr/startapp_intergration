@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 
 typedef void BannerCreatedCallback(BannerController controller);
 typedef StringToVoidFunc = void Function(String);
-const String PLUGIN_KEY = "vn.momo.plugin.startapp.StartAppBannerPlugin";
+const String PLUGIN_KEY = "com.kwanzahosting.StartappIntergrationPlugin";
 
 class StartappIntergration {
 
@@ -97,7 +97,7 @@ class _BannerState extends State<AdBanner> {
 
 class BannerController {
   BannerController._(int id)
-      : _channel = new MethodChannel('${PLUGIN_KEY}_$id');
+      : _channel = new MethodChannel('startapp_intergration');
 
   final MethodChannel _channel;
 
