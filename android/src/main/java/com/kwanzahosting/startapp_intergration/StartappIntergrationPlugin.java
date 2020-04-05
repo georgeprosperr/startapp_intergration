@@ -54,7 +54,7 @@ public class StartappIntergrationPlugin implements FlutterPlugin, ActivityAware,
     channel.setMethodCallHandler(new StartappIntergrationPlugin());
 
     registrar.platformViewRegistry()
-            .registerViewFactory("com.kwanzahosting.startapp_intergration", new BannerFactory(registrar.messenger()));
+            .registerViewFactory("com.kwanzahosting.startapp_intergration.StartappIntergrationPlugin", new BannerFactory(registrar.messenger()));
 
   }
 
