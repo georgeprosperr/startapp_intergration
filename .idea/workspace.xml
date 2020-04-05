@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f96a559d-5906-4531-9725-a1a248a524cc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/kwanzahosting/startapp_intergration/StartappIntergrationPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/kwanzahosting/startapp_intergration/StartappIntergrationPlugin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/startapp_intergration.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/startapp_intergration.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
@@ -19,15 +18,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/startapp_intergration.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+            <state relative-caret-position="296">
+              <caret line="66" column="14" lean-forward="true" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
               <folding>
                 <element signature="e#391#445#0" expanded="true" />
                 <element signature="e#576#738#0" expanded="true" />
                 <element signature="e#229#338#0" expanded="true" />
+                <element signature="e#1242#1706#0" expanded="true" />
+                <element signature="e#2029#2374#0" expanded="true" />
+                <element signature="e#2414#2596#0" expanded="true" />
+                <element signature="e#2771#2826#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -36,13 +39,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/android/src/main/java/com/kwanzahosting/startapp_intergration/StartappIntergrationPlugin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="67" column="11" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
+            <state relative-caret-position="7">
+              <caret line="56" column="99" selection-start-line="56" selection-start-column="99" selection-end-line="56" selection-end-column="99" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#StartappIntergrationPlugin#0" expanded="true" />
                 <element signature="method#onAttachedToEngine#0;class#StartappIntergrationPlugin#0" expanded="true" />
-                <element signature="method#registerWith#0;class#StartappIntergrationPlugin#0" expanded="true" />
+                <element signature="method#onMethodCall#0;class#StartappIntergrationPlugin#0" expanded="true" />
                 <element signature="method#onReceiveAd#0;class#2618:3474" expanded="true" />
                 <element signature="method#onFailedToReceiveAd#0;class#2618:3474" expanded="true" />
                 <element signature="method#onAttachedToActivity#0;class#StartappIntergrationPlugin#0" expanded="true" />
@@ -54,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/android/src/main/java/com/kwanzahosting/startapp_intergration/FlutterBannerView.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
-              <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+              <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#FlutterBannerView#0" expanded="true" />
@@ -76,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/android/src/main/java/com/kwanzahosting/startapp_intergration/BannerFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="224">
-              <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#create#0;class#BannerFactory#0" expanded="true" />
@@ -130,14 +133,14 @@
       <list>
         <option value="$PROJECT_DIR$/example/android/app/build.gradle" />
         <option value="$PROJECT_DIR$/android/build.gradle" />
-        <option value="$PROJECT_DIR$/android/src/main/java/com/kwanzahosting/startapp_intergration/StartappIntergrationPlugin.java" />
-        <option value="$PROJECT_DIR$/lib/startapp_intergration.dart" />
         <option value="$PROJECT_DIR$/lib/BannerFactory.java" />
         <option value="$PROJECT_DIR$/lib/FlutterBannerView.java" />
+        <option value="$PROJECT_DIR$/android/src/main/java/com/kwanzahosting/startapp_intergration/StartappIntergrationPlugin.java" />
+        <option value="$PROJECT_DIR$/lib/startapp_intergration.dart" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-59" />
     <option name="y" value="115" />
     <option name="width" value="1303" />
@@ -289,7 +292,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="46" y="27" width="1320" height="741" extended-state="6" />
+    <frame x="46" y="27" width="1320" height="741" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" side_tool="true" />
@@ -338,22 +341,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/startapp_intergration.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-          <folding>
-            <element signature="e#391#445#0" expanded="true" />
-            <element signature="e#576#738#0" expanded="true" />
-            <element signature="e#229#338#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/android/src/main/java/com/kwanzahosting/startapp_intergration/BannerFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
-          <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#create#0;class#BannerFactory#0" expanded="true" />
@@ -361,15 +352,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/android/src/main/java/com/kwanzahosting/startapp_intergration/FlutterBannerView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#FlutterBannerView#0" expanded="true" />
+            <element signature="method#FlutterBannerView#0;class#FlutterBannerView#0" expanded="true" />
+            <element signature="method#onMethodCall#0;class#FlutterBannerView#0" expanded="true" />
+            <element signature="method#updateContent#0;class#FlutterBannerView#0" expanded="true" />
+            <element signature="e#2016#2017#0" expanded="true" />
+            <element signature="e#2054#2055#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/android/src/main/java/com/kwanzahosting/startapp_intergration/StartappIntergrationPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="67" column="11" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
+        <state relative-caret-position="7">
+          <caret line="56" column="99" selection-start-line="56" selection-start-column="99" selection-end-line="56" selection-end-column="99" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#StartappIntergrationPlugin#0" expanded="true" />
             <element signature="method#onAttachedToEngine#0;class#StartappIntergrationPlugin#0" expanded="true" />
-            <element signature="method#registerWith#0;class#StartappIntergrationPlugin#0" expanded="true" />
+            <element signature="method#onMethodCall#0;class#StartappIntergrationPlugin#0" expanded="true" />
             <element signature="method#onReceiveAd#0;class#2618:3474" expanded="true" />
             <element signature="method#onFailedToReceiveAd#0;class#2618:3474" expanded="true" />
             <element signature="method#onAttachedToActivity#0;class#StartappIntergrationPlugin#0" expanded="true" />
@@ -380,18 +387,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android/src/main/java/com/kwanzahosting/startapp_intergration/FlutterBannerView.java">
+    <entry file="file://$PROJECT_DIR$/lib/startapp_intergration.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        <state relative-caret-position="296">
+          <caret line="66" column="14" lean-forward="true" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#FlutterBannerView#0" expanded="true" />
-            <element signature="method#FlutterBannerView#0;class#FlutterBannerView#0" expanded="true" />
-            <element signature="method#onMethodCall#0;class#FlutterBannerView#0" expanded="true" />
-            <element signature="method#updateContent#0;class#FlutterBannerView#0" expanded="true" />
-            <element signature="e#2016#2017#0" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
+            <element signature="e#391#445#0" expanded="true" />
+            <element signature="e#576#738#0" expanded="true" />
+            <element signature="e#229#338#0" expanded="true" />
+            <element signature="e#1242#1706#0" expanded="true" />
+            <element signature="e#2029#2374#0" expanded="true" />
+            <element signature="e#2414#2596#0" expanded="true" />
+            <element signature="e#2771#2826#0" expanded="true" />
           </folding>
         </state>
       </provider>
